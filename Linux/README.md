@@ -10,6 +10,24 @@
 
 
 
+### 방화벽
+> - **시작**   
+>   \- systemctl start firewalld   
+> - **중지**   
+>   \- systemctl enable firewalld   
+> - **재시작**   
+>   \- firewall-cmd --reload   
+> - **서비스 추가**   
+>   \- firewall-cmd --permanent --zone=public --add-service=http   
+>   \- firewall-cmd --permanent --zone=public --add-service=https   
+> - **포트 추가**   
+>   \- firewall-cmd --permanent --zone=public --add-port=8073/tcp   
+> - **확인**   
+>   \- firewall-cmd --zone=public --list-all   
+
+
+
+
 ### MySQL 설치
 > - **설치**   
 >   \- yum -y install mysql-server   
