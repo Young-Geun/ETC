@@ -17,6 +17,8 @@
 >   \- systemctl stop firewalld    
 > - **재시작**   
 >   \- firewall-cmd --reload   
+> - **구동 확인**   
+>   \- systemctl status firewalld   
 > - **서비스 추가**   
 >   \- firewall-cmd --permanent --zone=public --add-service=http   
 >   \- firewall-cmd --permanent --zone=public --add-service=https   
