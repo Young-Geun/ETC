@@ -14,7 +14,7 @@
 > - **시작**   
 >   \- systemctl start firewalld   
 > - **중지**   
->   \- systemctl enable firewalld   
+>   \- systemctl stop firewalld    
 > - **재시작**   
 >   \- firewall-cmd --reload   
 > - **서비스 추가**   
