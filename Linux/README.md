@@ -4,10 +4,9 @@
 
 
 ### 포트 개방
-> sudo iptables -I INPUT 5 -i ens3 -p tcp --dport [포트번호] -m state --state NEW,ESTABLISHED -j ACCEPT   
-> Ex) sudo iptables -I INPUT 5 -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT   
-> Ex) sudo iptables -I INPUT 5 -i ens3 -p tcp --dport 433 -m state --state NEW,ESTABLISHED -j ACCEPT   
-
+> sudo iptables -I INPUT 1 -p tcp --dport [포트번호] -j ACCEPT   
+> Ex) sudo iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT   
+> Ex) sudo iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT   
 
 
 ### 방화벽
