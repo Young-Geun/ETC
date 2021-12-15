@@ -42,3 +42,19 @@
 >   \- show databases   
 > - **데이터베이스 사용**   
 >   \- use database_name   
+
+
+
+
+### MacOS 자바 설치 및 환경변수 설정
+> - **설치**   
+>   \- 생략   
+> - **경로 복사**   
+>   \- /Library/Java/JavaVirtualMachines/설치된 JDK버전/Contents/Home   
+> - **경로 설정**   
+>   \- vi ~/.bash_profile 입력 후  
+>   \- export JAVA_HOME=/Library/Java/JavaVirtualMachines/설치된 JDK버전/Contents/Home   
+> - **변경한 환경변수 적용**   
+>   \- source ~/.bash_profile   
+> - **확인**   
+>   \- java -version   
