@@ -66,8 +66,8 @@
 ### MacOS에서 SSH접속
 > - **keygen 추가 생성**   
 >   \- ssh-keygen -b 2048 -t rsa      
-> - **생성된 키젠 업로드**   
->   \- 생성된 키젠 중 xxx.pub파일 클라우드 서버에 업로드      
+> - **생성된 키젠 추가**   
+>   \- 생성된 키젠 중 xxx.pub파일의 내용을 클라우드 서버에 존재하는 .ssh/authorized_keys에 키 추가   
 > - **개인키 권한 변경**   
 >   \- chmod 600 [키경로]/[키이름]         
 >   \- Ex) chmod 600 .ssh/id_rsa   
