@@ -3,10 +3,17 @@
 
 
 
+### 대상 서버 포트 확인
+> telnet [IP] [port]   
+> Ex) telnet 192.0.0.1 8084       
+
+
+
 ### 포트 개방
 > sudo iptables -I INPUT 1 -p tcp --dport [포트번호] -j ACCEPT   
 > Ex) sudo iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT   
 > Ex) sudo iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT   
+
 
 
 ### 방화벽
@@ -28,7 +35,6 @@
 
 
 
-
 ### MySQL 설치
 > - **설치**   
 >   \- yum -y install mysql-server   
@@ -42,7 +48,6 @@
 >   \- show databases   
 > - **데이터베이스 사용**   
 >   \- use database_name   
-
 
 
 
@@ -61,8 +66,6 @@
 
 
 
-
-
 ### MacOS에서 SSH접속
 > - **keygen 추가 생성**   
 >   \- ssh-keygen -b 2048 -t rsa      
@@ -74,3 +77,5 @@
 > - **접속**   
 >   \- ssh -i [키경로]/[키이름] [유저명]@IP   
 >   \- Ex) ssh -i /Users/choi/.ssh/id_rsa opc@123.123.123.123
+
+
