@@ -6,5 +6,5 @@
 
 ### Oracle ESCAPE
 > \- LIKE 연산으로 '%' 나 '_' 가 포함된 문자를 검색하고자 할때 사용한다.   
-> \- Ex) SELECT * FROM BOARD WHERE TITLE LIKE '%\%%' ESCAPE '\'   
-> \- Ex) SELECT * FROM BOARD WHERE TITLE LIKE '%\_%' ESCAPE '\'   
+> \- Ex) SELECT * FROM BOARD WHERE TITLE LIKE '%\%%' ESCAPE '\\'   
+> \- Ex) SELECT * FROM BOARD WHERE TITLE LIKE '%\_%' ESCAPE '\\'   
