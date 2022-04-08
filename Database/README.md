@@ -40,7 +40,7 @@
 > - **생성된 시퀀스 조회**   
 >   \- SELECT * FROM user_sequences   
 > - **현재 시퀀스 조회**   
->   \- SELECT access_history_seq.currval FROM dual   
+>   \- SELECT 시퀀스명.currval FROM dual   
 >   \- (*참고. nextval을 실행 후, 같은 세션동안만 사용 가능하다.)   
 > - **다음 시퀀스 확인**   
->   \- SELECT access_history_seq.nextval FROM dual   
+>   \- SELECT 시퀀스명.nextval FROM dual   
