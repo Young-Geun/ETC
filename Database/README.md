@@ -4,6 +4,7 @@
 > \- 대소문자를 구분할 때 사용할 수 있다.   
 
 
+
 ### Oracle ESCAPE
 > \- LIKE 연산으로 '%' 나 '_' 가 포함된 문자를 검색하고자 할때 사용한다.   
 > \- Ex) SELECT * FROM BOARD WHERE TITLE LIKE '%\\%%' ESCAPE '\\'   
@@ -34,3 +35,12 @@
 >   \- SELECT * FROM user_col_comments   
 
 
+
+### Oracle 시퀀스 조회
+> - **생성된 시퀀스 조회**   
+>   \- SELECT * FROM user_sequences   
+> - **현재 시퀀스 조회**   
+>   \- SELECT access_history_seq.currval FROM dual   
+>   \- (*참고. nextval을 실행 후, 같은 세션동안만 사용 가능하다.)   
+> - **다음 시퀀스 확인**   
+>   \- SELECT access_history_seq.nextval FROM dual   
