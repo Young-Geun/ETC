@@ -87,3 +87,16 @@
 >   \- R : 하위 디렉토리까지 조회   
 >   \- t : 시간순으로 조회   
 >   \- ltr : 날짜순으로 상세 조회   
+
+
+
+### Alias 설정방법
+> - **명령어를 통한 생성**   
+>   \- alias 별명='명령어'   
+>   \- Ex) alias boot_start='/home/opc/start.sh'   
+>   \- * 명령어를 통한 생성은 시스템 재시작을 하게되면 초기화된다.   
+>   \- * 'unalias 별명' 명령어를 통하여 삭제 가능하다.   
+> - **.bash_profile에 정의하여 생성**   
+>   \- ~/.bash_profile에 등록한다.   
+>   \- Ex) vi .bash_profile 후에 alias boot_start='/home/opc/start.sh' 작성   
+>   \- * 명령어 등록 후, 'source .bash_profile' 또는 '. .bash_profile' 명령어를 통해 적용 완료시킨다.   
