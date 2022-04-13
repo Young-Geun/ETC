@@ -100,3 +100,9 @@
 >   \- ~/.bash_profile에 등록한다.   
 >   \- Ex) vi .bash_profile 후에 alias boot_start='/home/opc/start.sh' 작성   
 >   \- * 명령어 등록 후, 'source .bash_profile' 또는 '. .bash_profile' 명령어를 통해 적용 완료시킨다.   
+
+
+
+### Apache 버전 확인
+>   \- httpd -v (단, 설치된 경로에서 유효한 명령어. 설치된 경로를 확인하기 위해서는 'ps -ef | grep -i httpd' 명령어 실행하여 확인가능하다.)   
+>   \- rpm -qa httpd   
