@@ -44,3 +44,9 @@
 >   \- (*참고. nextval을 실행 후, 같은 세션동안만 사용 가능하다.)   
 > - **다음 시퀀스 확인**   
 >   \- SELECT 시퀀스명.nextval FROM dual   
+
+
+
+### 중복 데이터조회
+> \- SELECT COL1, COUNT(\*) FROM TABLE_NAME GROUP BY COL1 HAVING COUNT(\*) > 1;   
+> \- SELECT COL1, COL2, COUNT(\*) FROM TABLE_NAME GROUP BY COL1, COL2 HAVING COUNT(\*) > 1;   
