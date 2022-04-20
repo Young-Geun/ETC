@@ -50,3 +50,12 @@
 ### 중복 데이터조회
 > \- SELECT COL1, COUNT(\*) FROM TABLE_NAME GROUP BY COL1 HAVING COUNT(\*) > 1;   
 > \- SELECT COL1, COL2, COUNT(\*) FROM TABLE_NAME GROUP BY COL1, COL2 HAVING COUNT(\*) > 1;   
+
+
+
+### Oracle 난수 생성
+> - **랜덤 숫자**   
+>   \- SELECT TRUNC(DBMS_RANDOM.VALUE(1, 1000)) FROM DUAL      
+> - **랜덤 문자**   
+>   \- SELECT DBMS_RANDOM.STRING('U', 10) FROM DUAL   
+>   \- U=(대문자), L=(소문자), A=(대, 소문자 혼용), X=(영어, 숫자 혼용), P=(특수문자 포함 모두 혼용)   
