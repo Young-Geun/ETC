@@ -118,3 +118,13 @@
 >   \- :%s/[변경 대상 문자]/[변경할 문자]   
 >   \- Ex) :%s/foo/bar (foo가 bar로 변경된다.)     
 
+
+
+### tail
+> - **실시간 표시**   
+>   \- tail -f [파일명]   
+>   \- Ex) tail -f exception.log   
+>   \- Ex) tail -100f exception.log   
+> - **여러 파일을 동시에 표시**   
+>   \- tail -f [첫 번째 파일명] [두 번째 파일명]   
+>   \- Ex) tail -f exception_admin.log exception_user.log   
