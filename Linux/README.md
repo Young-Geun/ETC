@@ -134,3 +134,9 @@
 > - **여러 파일을 동시에 표시**   
 >   \- tail -f [첫 번째 파일명] [두 번째 파일명]   
 >   \- Ex) tail -f exception_admin.log exception_user.log   
+
+
+
+### 문자가 포함된 파일 찾기
+>   \- find [대상폴더] -name "[파일명].[확장자]" | xargs grep "[문자열]"   
+>   \- Ex) find . -name "\*.\*" | xargs grep "123" (현재 디렉토리에서 문자 '123'이 포함된 파일 검색)   
