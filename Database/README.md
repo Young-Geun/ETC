@@ -59,3 +59,16 @@
 > - **랜덤 문자**   
 >   \- SELECT DBMS_RANDOM.STRING('U', 10) FROM DUAL   
 >   \- U=(대문자), L=(소문자), A=(대, 소문자 혼용), X=(영어, 숫자 혼용), P=(특수문자 포함 모두 혼용)   
+
+
+
+### 해당월의 전체날짜 구하기
+> ```
+> SELECT  TO_CHAR(DT + LEVEL -1, 'yyyy-MM-dd') AS YYYYMMDD
+> FROM (
+>        SELECT TO_DATE(:yyyymm, 'YYYYMM') AS DT 
+>        FROM DUAL
+>      )
+> CONNECT BY LEVEL <= LAST_DAY(DT) -DT +1;
+> ```
+>   \- 202205를 입력하면 2022-05-01부터 2022-05-31까지 얻을 수 있다.   
