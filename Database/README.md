@@ -72,3 +72,12 @@
 > CONNECT BY LEVEL <= LAST_DAY(DT) -DT +1;
 > ```
 >   \- 202205를 입력하면 2022-05-01부터 2022-05-31까지 얻을 수 있다.   
+
+
+
+### 테이블 COPY
+> ```
+> CREATE TABLE MEMBER_TMP AS
+> SELECT * FROM MEMBER;
+> ```
+>   \- 테이블을 생성한 이후에 데이터를 복사할 수 있다.   
