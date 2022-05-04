@@ -5,3 +5,23 @@
 >    <select id="QueryId" useCache="false" flushCache="true">
 >       SELECT ...
 >    </select>
+
+
+
+### Mybatis 0 비교
+>   \- 이슈내용 : 실수형 column1, column2의 값이 0일 때, column1 != ''와 column2 != '' 조건을 만족하여 0으로 업데이트 불가   
+>    ```java
+>    <update id="update">
+>       update table
+>       <set>
+>           <if test="column1 != null and column1 != ''">
+>               column1 = #{column1},
+>           </if>
+>           <if test="column2 != null and column2 != ''">
+>               column2 = #{column2},
+>           </if>
+>       </set>
+>       where column0 = #{column0}
+>   </update>
+>    ```
+>   \- 수정사항 :  column1 != '' 대신에 column1.equals("") 사용 
