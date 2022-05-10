@@ -25,3 +25,10 @@
 >   </update>
 >    ```
 >   \- 수정사항 :  column1 != '' 대신에 column1.equals("") 사용 
+
+
+
+### Invalid bound statement (not found)
+>   \- 오류메시지 : org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)   
+>   \- 원인 1.  Repository의 메서드명과 Mapper.xml의 id가 일치하지 않는 경우  
+>   \- 원인 2.  Mapper.xml의 경로가 잘못된 경우   
