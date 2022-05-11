@@ -51,6 +51,20 @@
 
 
 
+### Maria DB 설치
+> - **설치**   
+>   \- sudo yum -y install mariadb-server   
+> - **설치확인**   
+>   \- rpm -qa | grep -i mariadb   
+> - **실행**   
+>   \- sudo systemctl start mariadb   
+> - **접속**   
+>   \- mysql -u tester -p   
+> - **데이터베이스 사용**   
+>   \- use database_name   
+
+
+
 ### MacOS 자바 설치 및 환경변수 설정
 > - **설치**   
 >   \- 생략   
