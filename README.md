@@ -41,5 +41,10 @@
 
 
 
+* [ETC][etc_link]
+ 
+[etc_link]: https://github.com/Young-Geun/ETC/blob/main/ETC.md
+
+
 <br><br><br>
 - - -
