@@ -39,4 +39,7 @@
 >   \- 현상 : 다수의 데이터를 POST 방식으로 전달하여 처리하는 과정에서 일부 데이터가 처리되지 않는 현상 발생   
 >   \- 오류메시지 : More than the maximum number of request parameters (GET plus POST) for a single request ([10,000]) were detected. Any parameters beyond this limit have been ignored.   
 >   \- 원인 : 파라미터 갯수 또는 사이즈를 초과한 경우 발생   
->   \- 해결방안 : 톰캣 설정 중 maxPostSize와 maxParameterCount를 변경한다.   
+>   \- 해결방안 : 톰캣 설정 중 maxPostSize와 maxParameterCount를 변경한다.(톰캣 버전에 따라 설정 값이 상이할 수 있다.)   
+>    ```java
+>    <Connector ...생략... maxPostSize="-1" maxParameterCount="-1" />
+>    ```
