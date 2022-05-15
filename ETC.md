@@ -26,4 +26,15 @@
 > - **Import 정리**   
 >   \- macOS : ^ + ⌥ + O   
 >   \- Windows : Ctrl + Alt + O   
-
+> - **라인 주석**   
+>   \- macOS : ⌘ + /   
+>   \- Windows : Ctrl + /   
+> - **블럭 주석**   
+>   \- macOS : ⌘ + ⌥ + /   
+>   \- Windows : Ctrl + Shift + /   
+> - **Override 메소드 자동 생성**   
+>   \- macOS : ⌘ + O   
+>   \- Windows : Ctrl + O   
+> - **Implement 가능한 메서드 자동 생성**   
+>   \- macOS : ⌘ + I   
+>   \- Windows : Ctrl + I   
