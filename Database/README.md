@@ -81,3 +81,13 @@
 > CREATE TABLE MEMBER_TMP AS
 > SELECT * FROM MEMBER;
 > ```
+
+
+
+### 휴지통 관리
+> - **휴지통 내용 조회**   
+>   \- show recyclebin   
+> - **휴지통 비우기**   
+>   \- purge recyclebin   
+> - **삭제된 테이블 복구**   
+>   \- flashback table [ 테이블명 ] to before drop   
