@@ -47,6 +47,11 @@
 
 
 
+### 최대값을 사용한 시퀀스 생성
+>   \- SELECT LPAD(TO_CHAR(NVL(MAX(컬럼명), 0) + 1), 5, '0') FROM 테이블명  
+
+
+
 ### 중복 데이터조회
 > \- SELECT COL1, COUNT(\*) FROM TABLE_NAME GROUP BY COL1 HAVING COUNT(\*) > 1;   
 > \- SELECT COL1, COL2, COUNT(\*) FROM TABLE_NAME GROUP BY COL1, COL2 HAVING COUNT(\*) > 1;   
