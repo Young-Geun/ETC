@@ -46,11 +46,11 @@
 
 
 
-### <button> 태그의 Default type   
+### \<button> 태그의 Default type   
 >   \- 현상 : 버튼을 클릭하였을 때, 자바스크립트의 유효성검사를 만족하지 않아도 submit되는 현상 발생      
 >   \- 원인코드   
 >   ```java
->   <button id="saveBtn">저장<button>   
+>   <button id="saveBtn">저장</button>   
 >   ... 생략 ...     
 >   <script>   
 >   $('#saveBtn').click(function() {   
@@ -60,4 +60,4 @@
 >   });   
 >   </script>     
 >   ```
->   \- 해결방안 : <button> 태그의 type속성에 button을 추가한다.(type이 지정안되면 submit이 Default)   
+>   \- 해결방안 : \<button> 태그의 type속성에 button을 추가한다.(type이 지정안되면 submit이 Default)   
