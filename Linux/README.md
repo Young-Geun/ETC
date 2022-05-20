@@ -66,6 +66,13 @@
 >   \- systemctl enable mariadb   
 > - **접속**   
 >   \- mysql -u root -p   
+> - **Database 확인**   
+>   \- show databases;   
+> - **Database 사용**   
+>   \- use 데이터베이스명;
+> - **Table 확인**   
+>   \- show tables;  
+
 
 
 ### MacOS 자바 설치 및 환경변수 설정
