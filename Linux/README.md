@@ -53,16 +53,19 @@
 
 ### Maria DB 설치
 > - **설치**   
->   \- sudo yum -y install mariadb-server   
+>   \- yum install mariadb mariadb-server   
 > - **설치확인**   
 >   \- rpm -qa | grep -i mariadb   
 > - **실행**   
->   \- sudo systemctl start mariadb   
+>   \- systemctl start mariadb   
+> - **실행 후 상태 확인**   
+>   \- systemctl status mariadb      
+> - **ROOT 비밀번호 설정**   
+>   \- mysqladmin -u root password   
+> - **부팅시 자동실행 설정**   
+>   \- systemctl enable mariadb   
 > - **접속**   
->   \- mysql -u tester -p   
-> - **데이터베이스 사용**   
->   \- use database_name   
-
+>   \- mysql -u root -p   
 
 
 ### MacOS 자바 설치 및 환경변수 설정
