@@ -9,6 +9,12 @@
 
 
 
+### 도메인명으로 IP확인
+> ping [Domain]   
+> Ex) ping google.com    
+
+
+
 ### 포트 개방
 > sudo iptables -I INPUT 1 -p tcp --dport [포트번호] -j ACCEPT   
 > Ex) sudo iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT   
