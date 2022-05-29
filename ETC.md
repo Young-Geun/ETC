@@ -38,3 +38,17 @@
 > - **Implement 가능한 메서드 자동 생성**   
 >   \- macOS : ⌘ + I   
 >   \- Windows : Ctrl + I   
+
+
+
+### Window10 키배열 맥북처럼 변경   
+> - **Caps Lock키로 한영전환 및 Ctrl키와 Alt키 위치변경**   
+>   \- 레지스트리 편집기 > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout로 이동   
+>   \- 이진파일 생성(파일명 : Scancode Map)   
+>   \- Scancode Map 편집   
+>   ```java
+>    00 00 00 00 00 00 00 00   
+>    02 00 00 00 72 00 3A 00   
+>    03 00 00 00 1D 00 38 00   
+>    38 00 1D 00 00 00 00 00   
+>   ```
