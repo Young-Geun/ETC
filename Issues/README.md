@@ -67,3 +67,17 @@
 >   \- 현상 : systemctl start mariadb 명령어 입력 시 아래의 오류메시지 발생   
 >   \- 오류메시지 : Job for mariadb.service failed because the control process exited with error code.      
 >   \- 해결방안 : /var/lib/mysql 디렉토리에서 ib_logfile0, ib_logfile1, ibdata1 삭제   
+
+
+### MariaDB 대소문자 구분 이슈
+>   \- 현상 : 테이블 조회 시, 다음의 오류메시지 발생 -> Table '테이블명' doesn't exist   
+>   \- 원인 : MariaDB에서 대소문자를 구분하고 있기 때문   
+>   \- 해결방안   
+>    * 옵션 값 확인    
+>       + show variables like 'lower_case_table_names';   
+>           + lower_case_table_names=0 : 테이블 생성 및 조회 시 대/소문자 구분   
+>           + lower_case_table_names=1 : 입력 값을 모두 소문자로 인식. 즉, 대소문자 구분하지 않음   
+>           + lower_case_table_names=2 : 윈도우에서 대/소문자를 구분해서 테이블 생성   
+>    * 설정 값 변경    
+>       + vi /etc/my.cnf.d/server.cnf      
+>           + lower_case_table_names=1   
