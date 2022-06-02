@@ -47,6 +47,11 @@
 
 
 
+### [Windows] 오라클 클라이언트 버전 확인
+>   \- Command > tnsping      
+
+
+
 ### INDEX 조회 
 > - **Oracle**   
 >   \- SELECT index_name FROM user_indexes WHERE table_name = '테이블명';   
