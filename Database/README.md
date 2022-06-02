@@ -47,6 +47,14 @@
 
 
 
+### INDEX 조회 
+> - **Oracle**   
+>   \- SELECT index_name FROM user_indexes WHERE table_name = '테이블명';   
+> - **MariaDB**   
+>   \- SHOW index FROM 테이블명;   
+
+
+
 ### 최대값을 사용한 시퀀스 생성
 >   \- SELECT LPAD(TO_CHAR(NVL(MAX(컬럼명), 0) + 1), 5, '0') FROM 테이블명  
 
