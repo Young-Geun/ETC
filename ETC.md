@@ -41,6 +41,13 @@
 
 
 
+### IntelliJ 플러그인
+> - **CamelCase**   
+>   \- macOS : Preference > Plugins > CamelCase > Shift + Alt + U   
+>   \- Windows : Settings > Plugins > CamelCase > ⇧ + ⌥ + U   
+
+
+
 ### Window10 키배열 맥북처럼 변경   
 > - **Caps Lock키로 한영전환 및 Ctrl키와 Alt키 위치변경**   
 >   \- 레지스트리 편집기 > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout로 이동   
