@@ -69,6 +69,13 @@
 >   \- 해결방안 : /var/lib/mysql 디렉토리에서 ib_logfile0, ib_logfile1, ibdata1 삭제   
 
 
+### MariaDB 인코딩 이슈
+>   \- 오류메시지 : Cause: java.sql.SQLSyntaxErrorException: (conn=4981) Incorrect string value   
+>   \- 원인 : Insert하려는 데이터에 한글이 포함되어 있어서 발생.   
+>   \- 해결방안 : ALTER TABLE 테이블명 convert to charset UTF8;(테이블의 언어셋을 변경)   
+
+
+
 ### MariaDB 대소문자 구분 이슈
 >   \- 현상 : 테이블 조회 시, 다음의 오류메시지 발생 -> Table '테이블명' doesn't exist   
 >   \- 원인 : MariaDB에서 대소문자를 구분하고 있기 때문   
