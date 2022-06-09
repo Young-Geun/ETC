@@ -63,10 +63,19 @@
 >   \- 해결방안 : \<button> 태그의 type속성에 button을 추가한다.(type이 지정안되면 submit이 Default)   
 
 
-### MariaDB 실행 시 오류
+
+### MariaDB 실행 시 오류 \#1
 >   \- 현상 : systemctl start mariadb 명령어 입력 시 아래의 오류메시지 발생   
 >   \- 오류메시지 : Job for mariadb.service failed because the control process exited with error code.      
 >   \- 해결방안 : /var/lib/mysql 디렉토리에서 ib_logfile0, ib_logfile1, ibdata1 삭제   
+
+
+
+### MariaDB 실행 시 오류 \#2
+>   \- 현상 : MariaDB가 죽어있어서 재기동을 위하여 'systemctl start mariadb' 명령어를 입력하였을 때, 아래의 오류메시지 발생   
+>   \- 오류메시지 : [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist        
+>   \- 해결방안 : /etc/my.cnf 파일에 skip-grant-tables 추가     
+
 
 
 ### MariaDB 인코딩 이슈
