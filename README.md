@@ -5,15 +5,9 @@
 
 # INDEX
 
-* [Spring Boot][springboot_link]
+* [WEB][web_link]
  
-[springboot_link]: https://github.com/Young-Geun/ETC/blob/main/Spring%20Boot/README.md
-
-
-
-* [JS][js_link]
- 
-[js_link]: https://github.com/Young-Geun/ETC/blob/main/JS/README.md
+[web_link]: https://github.com/Young-Geun/ETC/blob/main/WEB/README.md
 
 
 
