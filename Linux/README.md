@@ -186,3 +186,9 @@
 >   \- shutdown -h now   
 > - **재부팅**   
 >   \- shutdown -r now
+
+
+
+### 시간변경 
+>   \- date -s "시:분:초"   
+>   \- Ex) date -s "07:31:00"   
