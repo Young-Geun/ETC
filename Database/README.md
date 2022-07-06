@@ -80,6 +80,16 @@
 
 
 
+### 날짜 구하기
+> - **오늘 날짜**   
+>   \- Oracle : SELECT SYSDATE FROM DUAL   
+>   \- MySQL : SELECT NOW()   
+> - **어제 날짜**   
+>   \- Oracle : SELECT SYSDATE-1 FROM DUAL   
+>   \- MySQL : SELECT NOW()- INTERVAL 1 DAY    
+
+
+
 ### 해당월의 전체날짜 구하기
 >   \- 202205를 입력하면 2022-05-01부터 2022-05-31까지 얻을 수 있다.   
 > ```
