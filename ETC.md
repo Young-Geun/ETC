@@ -64,5 +64,5 @@
 
 ### Github 이모지 
 >   \- Commit 코멘트에 이모지를 사용하고자 할 때, :이모지명: 의 형태로 사용할 수 있다.   
->   \- Ex) 쿼리 오류 수정 :bug:   
+>   \- Ex) 쿼리 :bug:버그 수정   
 >   \- 이모지 시트 : https://www.webfx.com/tools/emoji-cheat-sheet/   
