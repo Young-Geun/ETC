@@ -62,7 +62,7 @@
 
 
 
-### Window에서 tail
+### Window에서 Tail 명령어
 >   \- 명령어 : Get-Content 파일경로 -Wait -Tail 10   
 >   \- 단, Window PowerShell을 사용해야 한다.   
 
