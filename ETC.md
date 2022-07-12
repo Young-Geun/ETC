@@ -62,6 +62,12 @@
 
 
 
+### Window에서 tail
+>   \- 명령어 : Get-Content 파일경로 -Wait -Tail 10   
+>   \- 단, Window PowerShell을 사용해야 한다.   
+
+
+
 ### Github 이모지 
 >   \- Commit 코멘트에 이모지를 사용하고자 할 때, :이모지명: 의 형태로 사용할 수 있다.   
 >   \- Ex) 쿼리 :bug:버그 수정   
