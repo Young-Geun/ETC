@@ -16,12 +16,12 @@
 
 
 ### 포트 정리
-> 20, 21 - FTP   
-> 22 - SSH
-> 23 - Telnet
-> 25 - SMTP
-> 80 - HTTP
-> 443 - HTTPS
+>   \- 20, 21 : FTP   
+>   \- 22 : SSH   
+>   \- 23 : Telnet   
+>   \- 25 : SMTP   
+>   \- 80 : HTTP   
+>   \- 443 : HTTPS   
 
 
 
