@@ -3,6 +3,12 @@
 
 
 
+### OS 버전 확인
+>   \- cat /etc/issue   
+>   \- cat /etc/os-release   
+
+
+
 ### 대상 서버 포트 확인
 > telnet [IP] [port]   
 > Ex) telnet 192.0.0.1 8084       
